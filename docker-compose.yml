@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  nodetraining:
+    image: shwephuehmone/nodetraining
+    build: .
+    ports:
+      - "80:9000"
+    environment:
+      - DB_CONNECTION=mongodb://127.0.0.1:27017/expresslearning
